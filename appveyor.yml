@@ -13,6 +13,7 @@ environment:
 install:
   # We need wheel installed to build wheels
   - "%PYTHON%\\python.exe -m pip install wheel"
+  - "%PYTHON%\\python.exe -m pip install wheel Cython"
   - "%PYTHON%\\python.exe -m pip install opencv-python"
   - "%PYTHON%\\python.exe -m pip install opencv-contrib-python"
   - "%PYTHON%\\python.exe -m pip install appveyor-artifacts"
@@ -44,7 +45,7 @@ after_test:
 artifacts:
   # bdist_wheel puts your built wheel in the dist directory
   #- path: dist\*
-  - path: .coverage
+  - path: dist\*
 
 #on_success:
 #  You can use this step to upload your artifacts to a public website.
