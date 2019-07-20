@@ -1,4 +1,4 @@
-[![AppVeyor](https://ci.appveyor.com/api/projects/status/pirahansiah/opencv-python?svg=true)](https://ci.appveyor.com/api/projects/status/pirahansiah/opencv-python?svg=true) |
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/pirahansiah/opencv-python)](https://ci.appveyor.com/api/projects/status/pirahansiah/opencv-python)
 
 
 
