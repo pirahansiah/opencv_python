@@ -1,3 +1,4 @@
 import cv2
-cap=cv2.video
+print(cv2.__version__)
+
 
