@@ -1,4 +1,6 @@
-https://ci.appveyor.com/api/projects/status/github/pirahansiah/opencv-python
+
+https://ci.appveyor.com/api/projects/status/github/pirahansiah/opencv-python?branch=master&svg=true
+
 
 # opencv_python
 OpenCV workshop based on python 
