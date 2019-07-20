@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/appveyor/ci/pirahansiah/opencv-python/master.svg)](https://ci.appveyor.com/project/pirahansiah/opencv-python?branch=master)
+
 [![AppVeyor build status](https://ci.appveyor.com/api/github/3y5vy0c2vexvg79u?svg=true
 )](https://ci.appveyor.com/project/pirahansiah/opencv-python?branch=master)
 
