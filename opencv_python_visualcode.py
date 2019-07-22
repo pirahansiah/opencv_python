@@ -10,11 +10,9 @@ def main():
     print("farshid pirahansiah")
     print(cv2.__version__)
     cap=cv2.VideoCapture(0)
-
-    _,frame=cap.read()
-    
-    rows,cols,channels = frame.shape
-    if (rows>0):
+    if(cap.isOpened()):
+        _,frame=cap.read()     
+        rows,cols,channels = frame.shape
         cv2.imshow('farshid original',frame)
         cv2.waitKey(1000)
         frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
