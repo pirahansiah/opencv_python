@@ -24,14 +24,14 @@ def main():
     #             frame.itemset((i,j),0)
 
     #fp.show_image_plt(frame)
-    fp.show_image_opencv(frame)
+    #fp.show_image_opencv(frame)
 
     # cv2.imshow("farshid",frame)
     # cv2.waitKey(1000)
 
 
-    px = frame[100,100]
-    print(px)
+    # px = frame[100,100]
+    # print(px)
 
 
 
