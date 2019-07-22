@@ -12,10 +12,12 @@ def main():
     cap=cv2.VideoCapture(0)
 
     _,frame=cap.read()
-    cv2.imshow('farshid original',frame)
-    cv2.waitKey(1000)
+    
     rows,cols,channels = frame.shape
-    frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
+    if (rows>0):
+        cv2.imshow('farshid original',frame)
+        cv2.waitKey(1000)
+        frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
 
     # frame=cv2.cvtColor(frame,cv2.COLOR_RGB2GRAY)
     # for i in range(rows):
