@@ -3,6 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 def show_image_plt(image):
+    # for many images 
     #plt.subplot(231),plt.imshow(image,'change'),plt.title('ORIGINAL')
     rgb_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     plt.imshow(rgb_img)
