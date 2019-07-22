@@ -16,6 +16,7 @@ def main():
         cv2.imshow('farshid original',frame)
         cv2.waitKey(1000)
         frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
+        fp.show_image_plt(frame)
 
     # frame=cv2.cvtColor(frame,cv2.COLOR_RGB2GRAY)
     # for i in range(rows):
@@ -69,5 +70,15 @@ def main():
 if __name__== "__main__":
   main()
 
-
+# cap=cv2.VideoCapture(0)
+# if(cap.isOpened()):
+#   _,frame=cap.read()     
+#   rows,cols,channels = frame.shape
+#   cv2.imshow('farshid original',frame)
+#   cv2.waitKey(1000)
+#   frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
+#   #fp.show_image_plt(frame)
+#   plt.imshow(frame)
+#   plt.title('ORIGINAL')
+#   plt.show()  
 
