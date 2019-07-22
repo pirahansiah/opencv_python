@@ -1,15 +1,18 @@
 # Farshid Pirahansiah 22/July/2019
+import numpy as np
+import os
+from matplotlib import pyplot as plt
+import opencv_functions as fp
+os.environ['OPENCV_IO_MAX_IMAGE_PIXELS']=str(2**64)
+import cv2
+
 def main():
     print("farshid pirahansiah")
-    import cv2
-    import numpy as np
-    from matplotlib import pyplot as plt
-    import opencv_functions as fp
     print(cv2.__version__)
     cap=cv2.VideoCapture(0)
 
     _,frame=cap.read()
-    cv2.imshow("farshid original",frame)
+    cv2.imshow('farshid original',frame)
     cv2.waitKey(1000)
     rows,cols,channels = frame.shape
     frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
