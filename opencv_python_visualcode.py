@@ -6,7 +6,7 @@ import opencv_functions as fp
 os.environ['OPENCV_IO_MAX_IMAGE_PIXELS']=str(2**64)
 import cv2
 
-def mainf():
+def main():
     print("farshid pirahansiah")
     print(cv2.__version__)
     cap=cv2.VideoCapture(0)
@@ -18,11 +18,12 @@ def mainf():
         frame=cv2.cvtColor(frame,cv2.COLOR_RGB2HSV)
         fp.show_image_plt(frame)
         #fp.show_image_opencv(frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+        # if cv2.waitKey(1) & 0xFF == ord('q'):
+        #     break
         cap.release()
         cv2.destroyAllWindows()
-
+if __name__== "__main__":
+    main()
     # frame=cv2.cvtColor(frame,cv2.COLOR_RGB2GRAY)
     # for i in range(rows):
     #     for j in range(cols):
@@ -71,8 +72,7 @@ def mainf():
 
     # plt.show()
 
-if __name__== "__main__":
-  mainf()
+
 
 # cap=cv2.VideoCapture(0)
 # if(cap.isOpened()):
