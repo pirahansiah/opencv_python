@@ -16,6 +16,7 @@ install:
   - "%PYTHON%\\python.exe -m pip install wheel Cython"
   - "%PYTHON%\\python.exe -m pip install opencv-python"
   - "%PYTHON%\\python.exe -m pip install opencv-contrib-python"
+  - "%PYTHON%\\python.exe -m pip install matplotlib"
   #- "%PYTHON%\\python.exe -m pip install appveyor-artifacts"
   #python -m pip install tqdm
   #python -m pip install --upgrade pip setuptools wheel
