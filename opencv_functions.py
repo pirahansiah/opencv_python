@@ -53,8 +53,10 @@ def cartoon_image(image):
     img_edge = cv2.cvtColor(img_edge, cv2.COLOR_GRAY2RGB)
     img_cartoon = cv2.bitwise_and(img_color, img_edge)
     # display
+    image=img_cartoon
     cv2.imshow("cartoon", img_cartoon)
     cv2.waitKey(0)
+    return image
 
 def face_detection(img):
     face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
