@@ -1,4 +1,5 @@
-# dir /s /b /o:n /ad "xcam" > farshid.txt
+# list of specific files in specific folder in python
+# Windwos command: dir /s /b /o:n /ad "xcam" > farshid.txt
 ###################################################################################### import 
 import os
 import glob
