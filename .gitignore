@@ -1,7 +1,35 @@
 
-
 # macOS and career assets
 CAREER_IMPACT.md
 .DS_Store
 ._pack-*.idx
 ._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+cv_workshop/
+
+# Models
+*.pt
+*.onnx
+*.engine
+*.weights
+
+# IDE
+.vscode/
+.idea/
+
+# Output
+augmented_output/
+jetson_deploy/
