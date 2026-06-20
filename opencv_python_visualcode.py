@@ -1,21 +1,22 @@
-# Farshid Pirahansiah 29/July/2019
-import numpy as np
-import os
-from matplotlib import pyplot as plt
-import opencv_functions as fp
+"""VS Code integration examples: capture webcam, apply cartoon effect, save."""
+
+from __future__ import annotations
+
 import cv2
 
-def main():
+from opencv_functions import cartoon_image, save_image_opencv
+
+
+def main() -> None:
     print("farshid pirahansiah")
-    cap=cv2.VideoCapture(0)
-    if(cap.isOpened()):
-        _,frame=cap.read()     
-        rows,cols,channels = frame.shape
-        frame=fp.cartoon_image(frame)
-        fp.save_image_opencv('',frame)
+    cap = cv2.VideoCapture(0)
+    if cap.isOpened():
+        _, frame = cap.read()
+        frame = cartoon_image(frame)
+        save_image_opencv("cartoon_output.jpg", frame)
+        cap.release()
+        cv2.destroyAllWindows()
 
 
-
-
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
